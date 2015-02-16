@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/screen.css">
+    <meta charset="utf-8">
+    <title>JQuery Exercise</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="col 1">
+        <h1><a href="/i/index.html">I</a></h1>
+    </div>
+    <div class="col 2">
+        <h1><a href="/like/index.html">like</a></h1>
+    </div>
+    <div class="col 3">
+        <h1><a href="/pizza/index.html">Pizza</a></h1>
+    </div>
+</div>
+
+</body>
+<script>
+$(function() {
+    $('.col').hover(function() {
+        $('.col').removeClass('active');
+        $('.col').addClass('active');
+
+    });
+});
+</script>
+</html>
